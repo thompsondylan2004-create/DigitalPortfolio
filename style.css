@@ -1,0 +1,82 @@
+/* --- Global Styles --- */
+:root {
+    --bg-color: #121212; /* Dark background */
+    --text-color: #f0f0f0; /* Light text */
+    --accent-color: #007bff; /* Blue for links/highlights */
+    --font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* --- Typography & Headings --- */
+h1, h2, h3 {
+    color: var(--text-color);
+    margin-top: 20px;
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 5px;
+}
+
+/* --- Links and Buttons --- */
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #4da6ff; /* Lighter blue on hover */
+    text-decoration: underline;
+}
+
+.document-link {
+    display: block;
+    background-color: #2a2a2a;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border-left: 5px solid var(--accent-color);
+    transition: background-color 0.3s;
+}
+
+.document-link:hover {
+    background-color: #383838;
+}
+
+/* --- Section Styling --- */
+header {
+    text-align: center;
+    padding: 40px 0;
+    margin-bottom: 20px;
+    background: linear-gradient(180deg, #1f1f1f, var(--bg-color));
+}
+
+header h1 {
+    font-size: 2.5em;
+    border-bottom: none;
+}
+
+.section {
+    padding: 20px 0;
+    margin-bottom: 30px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    border-top: 1px solid #333;
+    font-size: 0.9em;
+}
